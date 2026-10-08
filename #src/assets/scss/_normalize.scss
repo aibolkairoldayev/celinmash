@@ -6,13 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.main {
-    min-height: 800px;
-    @media(max-width: 576px) {
-      min-height: 500px;
-    }
-}
-
 a {
     text-decoration: none;
     cursor: pointer;

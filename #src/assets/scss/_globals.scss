@@ -4,8 +4,7 @@
 html, body { height: 100%;}
 body { 
   margin: 0; 
-  font-family: "Commissioner", sans-serif;
-  font-family: "Geologica", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #fff;
   font-size: 16px;
   &.hidden {
@@ -14,14 +13,6 @@ body {
   &::-webkit-scrollbar {
     width: 0;
 }  
-}
-
-.main {
-  padding-top: 142px;
-  margin-top: 30px;
-  @media (max-width: 768px) {
-    padding-top: 71px;
-  }
 }
 
 .preloader {
@@ -45,38 +36,13 @@ body {
   }
 }
 
-@keyframes scaleAnimation {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2); /* Увеличиваем размер на 50% */
-  }
-}
-
-@font-face {
-  font-family: 'MuseoSansCyrillic';
-  src: url('../fonts/museosanscyrl-500.woff2') format('woff2'),
-       url('../fonts/museosanscyrl-500.woff') format('woff'),
-       url('../fonts/museosanscyrl-500.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MuseoSansCyrillic';
-  src: url('../fonts/museosanscyrl-700.woff2') format('woff2'),
-       url('../fonts/museosanscyrl-700.woff') format('woff'),
-       url('../fonts/museosanscyrl-700.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
 .container {
-  max-width: 1310px;
+  max-width: 1300px;
   margin: 0 auto;
   --bs-gutter-x: 0rem;
   width: 100%;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1310px) {
     max-width: 1180px;
   }
 
