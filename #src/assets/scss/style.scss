@@ -122,3 +122,42 @@
     display: none;
 }
 
+.blue-btn {
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #2C305B;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.main-title {
+    color: #2C305B;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.white-btn {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid #2C305B;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #2C305B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: fit-content;
+}

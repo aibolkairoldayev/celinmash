@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 200;
     &__top {
         background: #2E325D;
     }
@@ -72,8 +73,12 @@
         top: calc(100% + 10px);
         left: 0;
         width: 100%;
-
-        display: none;
+        overflow-y: hidden;
+        max-height: 0;
+        transition: .3s linear;
+        &.show {
+            max-height: 500px;
+        }
     }
 }
 
@@ -96,8 +101,10 @@
         font-style: normal;
         font-weight: 700;
         line-height: 142.857%; 
+        cursor: pointer;
         &.active {
             background: #F0F2FF;
+            cursor: default;
         }
     }
     &__right {
