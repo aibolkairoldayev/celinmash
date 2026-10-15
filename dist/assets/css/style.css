@@ -542,6 +542,56 @@ body::-webkit-scrollbar {
   width: fit-content;
 }
 
+.breadcrumbs {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.breadcrumbs a {
+  color: #7B7B7B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+
+.breadcrumbs img {
+  min-width: 12px;
+  width: 12px;
+}
+
+.breadcrumbs span {
+  color: #2C305B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+
+.type2 .breadcrumbs {
+  margin-bottom: 50px;
+}
+
+.type2 .breadcrumbs a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.type2 .breadcrumbs img {
+  -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1175%) hue-rotate(213deg) brightness(116%) contrast(100%);
+          filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1175%) hue-rotate(213deg) brightness(116%) contrast(100%);
+  opacity: 0.6;
+}
+
+.type2 .breadcrumbs span {
+  color: #FFF;
+}
+
 @media (max-width: 1310px) {
   .container {
     max-width: 1180px;

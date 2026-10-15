@@ -161,3 +161,44 @@
     line-height: 150%;
     width: fit-content;
 }
+
+.breadcrumbs {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+        color: #7B7B7B;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.857%;
+    }
+    img {
+        min-width: 12px;
+        width: 12px;
+    }
+    span {
+        color: #2C305B;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.857%;
+    }
+}
+
+.type2 {
+    .breadcrumbs {
+    margin-bottom: 50px;
+    a {
+        color: #ffffff99;
+    }
+    img {
+        filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1175%) hue-rotate(213deg) brightness(116%) contrast(100%);
+        opacity: 0.6;
+    }
+    span {
+        color: #FFF;
+    }
+}
+}
