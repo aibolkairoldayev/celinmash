@@ -56,3 +56,8 @@ $('.projects__tab').on('click', function (e) {
     $('.projects__content').removeClass('active');
     $('.projects__content').eq(index).addClass('active');
 });
+
+//career page accordion func
+$('.vacs__btn img').on('click', function() {
+    $(this).closest('.vacs__item').toggleClass('show');
+});
