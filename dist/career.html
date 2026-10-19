@@ -644,7 +644,135 @@
     <img src="assets/img/icons/logo1.svg" alt="logo">
 </div>
 
+<div class="modal appl2">
+    <div class="modal__bg"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="closeModal()">
+            <img src="assets/img/icons/close.svg" alt="icon">
+        </div>
+        <form action="" class="choose__form">
+            <div class="choose__items">
+                <div class="choose__item">
+                    <span class="choose__label main-label">Контактное лицо</span>
+                    <div class="choose__input">
+                        <img src="assets/img/icons/login.svg" alt="icon">
+                        <input class="main-input" type="text" placeholder="ФИО" required>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__label main-label">Компания</span>
+                    <div class="choose__input">
+                        <img src="assets/img/icons/building.svg" alt="icon">
+                        <input class="main-input" type="text" placeholder="Название компании" required>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__label main-label">Телефон</span>
+                    <div class="choose__input">
+                        <img src="assets/img/icons/phone2.svg" alt="icon">
+                        <input class="main-input" type="text" placeholder="+7 (..) ...-..-.." required>
+                    </div>
+                </div>
+                <div class="choose__item main-select">
+                    <span class="choose__label main-label">Интересующая продукция</span>
+                    <div class="choose__input">
+                        <select required>
+                            <option value="">Выберите категорию</option>
+                            <option value="1">Насосное оборудование</option>
+                            <option value="2">Запасные части</option>
+                            <option value="3">Насосные станции</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
+            <span class="choose__label main-label">Дополнительный комментарий</span>
+            <textarea class="main-input" placeholder="Расскажите о вашей задаче и пожеланиях"></textarea>
+            <span class="choose__label main-label">Опросный лист / файл — при необходимости</span>
+            <div class="choose__file main-file">
+                <input type="file" id="file" name="file">
+                <label for="file">
+                    <img src="assets/img/icons/file.svg" alt="icon">
+                    <div class="choose__file--text">
+                        <p>Нажмите или перетащите файл сюда</p>
+                        <span>Формат: PDF, DOC, DOCX, XLS, XLSX, PNG. До 10 мб</span>
+                    </div>
+                </label>
+            </div>
+            <button type="submit" class="choose__btn blue-btn">
+                <span></span>
+                Получить консультацию
+                <img src="assets/img/icons/right.svg" alt="arrow">
+            </button>
+            <div class="choose__ps">
+                <img src="assets/img/icons/lock.svg" alt="icon">
+                <span>Мы гарантируем конфиденциальность ваших данных</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal career-m">
+    <div class="modal__bg"></div>
+    <div class="modal__content">
+        <div class="modal__close" onclick="closeModal2()">
+            <img src="assets/img/icons/close.svg" alt="icon">
+        </div>
+        <form action="" class="career-m__form">
+            <div class="main-label">Название вакансии</div>
+            <div class="main-select career-m__select">
+                <select name="" id="">
+                    <option value="">Название вакансии</option>
+                    <option value="">Инженер по подбору насосного оборудования</option>
+                    <option value="">Ведущий инженер-проектировщик электроснабженния и автоматизации</option>
+                    <option value="">Менеджер по продажам насосного оборудования</option>
+                    <option value="">Инженер по подбору насосного оборудования</option>
+                    <option value="">Ведущий инженер-проектировщик электроснабженния и автоматизации</option>
+                </select>
+            </div>
+
+            <div class="main-label">ФИО</div>
+            <input class="main-input" type="text" placeholder="Введите имя и фамилию">
+
+            <div class="career-m__items">
+                <div class="career-m__item">
+                    <span class="main-label">Телефон</span>
+                    <input class="main-input" type="tel" placeholder="+7 (..) ...-..-..">
+                </div>
+                <div class="career-m__item">
+                    <span class="main-label">Email</span>
+                    <input class="main-input" type="tel" placeholder="Введите почту">
+                </div>
+            </div>
+
+            <div class="main-label">Комментарий</div>
+            <textarea class="main-input" name="" id="" placeholder="Коротко расскажите о себе или задайте вопрос"></textarea>
+        
+            <div class="main-label">Резюме</div>
+            <div class="main-file">
+                <input type="file" id="file" name="file">
+                <label for="file">
+                    <img src="assets/img/icons/file.svg" alt="icon">
+                    <div class="choose__file--text">
+                        <p>Нажмите или перетащите файл сюда</p>
+                        <span>Формат: PDF, DOC, DOCX, XLS, XLSX, PNG. До 10 мб</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="career-m__btn blue-btn">
+                <span></span>
+                Отправить отклик
+                <img src="assets/img/icons/right.svg" alt="arrow">
+            </div>
+            
+        </form>
+
+        <div class="career-m__note">
+            Отправляя форму, вы соглашаетесь на обработку персональных данных
+        </div>
+    </div>
+</div>
 <script src="./assets/js/jquery-3.2.1.min.js" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="./assets/js/mask.min.js" defer></script>

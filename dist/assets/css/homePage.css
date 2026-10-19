@@ -742,20 +742,7 @@
   margin-bottom: 20px;
 }
 
-.choose__label {
-  color: #2C305B;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142.857%;
-  margin-bottom: 6px;
-  display: block;
-}
-
 .choose__input {
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #DEDFE3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,44 +752,8 @@
   gap: 10px;
 }
 
-.choose__input input::-webkit-input-placeholder {
-  color: #D5D6DE;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-}
-
-.choose__input input::-moz-placeholder {
-  color: #D5D6DE;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-}
-
-.choose__input input:-ms-input-placeholder {
-  color: #D5D6DE;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-}
-
-.choose__input input::-ms-input-placeholder {
-  color: #D5D6DE;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-}
-
-.choose__input input::placeholder {
-  color: #D5D6DE;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
+.choose__input input {
+  width: 100%;
 }
 
 .choose__form textarea {

@@ -592,6 +592,62 @@ body::-webkit-scrollbar {
   color: #FFF;
 }
 
+.main-label {
+  color: #2C305B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.main-input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #DEDFE3;
+}
+
+.main-input::-webkit-input-placeholder {
+  color: #D5D6DE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main-input::-moz-placeholder {
+  color: #D5D6DE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main-input:-ms-input-placeholder {
+  color: #D5D6DE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main-input::-ms-input-placeholder {
+  color: #D5D6DE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main-input::placeholder {
+  color: #D5D6DE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 @media (max-width: 1310px) {
   .container {
     max-width: 1180px;

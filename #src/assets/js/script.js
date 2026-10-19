@@ -61,3 +61,29 @@ $('.projects__tab').on('click', function (e) {
 $('.vacs__btn img').on('click', function() {
     $(this).closest('.vacs__item').toggleClass('show');
 });
+
+// main modal open/close
+function openModal() {
+    $('.appl2').addClass('open');
+    $('body').css('overflow', 'hidden');
+}
+function closeModal() {
+    $('.appl2').removeClass('open');
+    $('body').css('overflow', 'unset');
+}
+$('.modal__bg').click(()=> {
+    closeModal()
+})
+
+// career modal open/close
+function openModal2() {
+    $('.career-m').addClass('open');
+    $('body').css('overflow', 'hidden');
+}
+function closeModal2() {
+    $('.career-m').removeClass('open');
+    $('body').css('overflow', 'unset');
+}
+$('.modal__bg').click(()=> {
+    closeModal2()
+})
