@@ -82,6 +82,18 @@
     }
 }
 
+.type2 {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        &__top {
+            background-color: transparent;
+        }
+    }
+}
+
 .submenu {
     &__content2 {
         background: #FFF;
