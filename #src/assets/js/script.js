@@ -87,3 +87,37 @@ function closeModal2() {
 $('.modal__bg').click(()=> {
     closeModal2()
 })
+
+// news page tabs func
+$('.news2__tab').on('click', function () {
+    const index = $(this).index();
+
+    $('.news2__tab').removeClass('active');
+    $(this).addClass('active');
+
+    $('.news2__tabs').removeClass('active').eq(index).addClass('active');
+    $('.news2__content').removeClass('active').eq(index).addClass('active');
+});
+
+//news page tabs 2nd level 
+$('.news2__tab2').on('click', function () {
+    const $tab = $(this);
+    const index = $tab.index();
+
+    // Находим родительскую группу табов
+    const $tabsGroup = $tab.closest('.news2__tabs');
+
+    // Определяем индекс группы: 0 или 1
+    const groupIndex = $tabsGroup.index();
+
+    // Находим соответствующую группу контента
+    const $contentGroup = $('.news2__content').eq(groupIndex);
+
+    // Переключаем active только внутри своей группы табов
+    $tabsGroup.children('.news2__tab2').removeClass('active');
+    $tab.addClass('active');
+
+    // Переключаем active только внутри соответствующей группы контента
+    $contentGroup.children('.news2__content2').removeClass('active');
+    $contentGroup.children('.news2__content2').eq(index).addClass('active');
+});
