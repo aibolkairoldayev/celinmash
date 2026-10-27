@@ -65,6 +65,10 @@
                     <a href="" class="header__whtsp">
                         <img src="/assets/img/icons/whtsp.svg" alt="Whatsapp">
                     </a>
+                    <div class="header__btn">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,7 +235,38 @@
     </div>
 </header> 
 
- 
+<div class="burger">
+    <div class="container">
+        <ul class="burger__menu">
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="#">Продукция</a>
+            </li>
+            <li>
+                <a href="about.html">О компании</a>
+            </li>
+            <li>
+                <a href="projects.html">Проекты</a>
+            </li>
+            <li>
+                <a href="career.html">Карьера</a>
+            </li>
+            <li>
+                <a href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+        <div class="burger__elem">
+            <img src="assets/img/icons/phone2.svg" alt="icon">
+            <a href="tel:+7 771 929 0180">+7 771 929 0180</a>
+        </div>
+        <div class="burger__elem">
+            <img src="assets/img/icons/mail.svg" alt="icon">
+            <a href="mailto:pkcelinmash@gmail.com">pkcelinmash@gmail.com</a>
+        </div>
+    </div>
+</div> 
 <main class="main">
     <div class="banner">
         <div class="banner__item">
@@ -242,14 +277,16 @@
             </div>
             <div class="banner__content">
                 <div class="container">
-                    <div class="banner__title">
-                        ТОО «ПК Целинмаш» — казахстанский производитель промышленного оборудования полного цикла.
-                    </div>
+                    <div class="banner__top">
+                        <div class="banner__title">
+                            ТОО «ПК Целинмаш» — казахстанский производитель промышленного оборудования полного цикла.
+                        </div>
 
-                    <div class="banner__text">
-                        Производим промышленные насосы и блочно-модульные решения для 
-                        инфраструктурных и промышленных объектов. Берёмся за нестандартные
-                         задачи и доводим проект до результата.
+                        <div class="banner__text">
+                            Производим промышленные насосы и блочно-модульные решения для 
+                            инфраструктурных и промышленных объектов. Берёмся за нестандартные
+                            задачи и доводим проект до результата.
+                        </div>
                     </div>
 
                     <a href="#" class="banner__btn blue-btn">
@@ -268,8 +305,10 @@
             </div>
             <div class="banner__content">
                 <div class="container">
-                    <div class="banner__title">
-                        ТПосмотрите наш каталог
+                    <div class="banner__top">
+                        <div class="banner__title">
+                            ТПосмотрите наш каталог
+                        </div>
                     </div>
 
                     <a href="#" class="banner__btn blue-btn">
@@ -288,10 +327,11 @@
             </div>
             <div class="banner__content">
                 <div class="container">
-                    <div class="banner__title">
-                        Запасные части для насосов — посмотреть здесь
+                    <div class="banner__top">
+                        <div class="banner__title">
+                            Запасные части для насосов — посмотреть здесь
+                        </div>                        
                     </div>
-
                     <a href="#" class="banner__btn blue-btn">
                         Смотреть запасные части
                         <img src="assets/img/icons/right.svg" alt="arrow">
@@ -308,14 +348,16 @@
             </div>
             <div class="banner__content">
                 <div class="container">
-                    <div class="banner__title">
-                        Патентованная мобильная базовая станция связи
-                    </div>
+                    <div class="banner__top">
+                        <div class="banner__title">
+                            Патентованная мобильная базовая станция связи
+                        </div>
 
-                    <div class="banner__text">
-                        Технология уже применяется ведущим телеком-оператором Beeline 
-                        Казахстан и обеспечивает надёжную связь на удалённых объектах и 
-                        территориях с высокой нагрузкой на сеть.
+                        <div class="banner__text">
+                            Технология уже применяется ведущим телеком-оператором Beeline 
+                            Казахстан и обеспечивает надёжную связь на удалённых объектах и 
+                            территориях с высокой нагрузкой на сеть.
+                        </div>
                     </div>
 
                     <a href="#" class="banner__btn blue-btn">
@@ -366,9 +408,14 @@
                         <p>Оборудования на складах</p>
                     </div>
                 </div>
+
+                <a href="#" class="about__btn2 white-btn mob768">
+                    Подробнее о компании
+                    <img src="assets/img/icons/right3.svg" alt="arrow">
+                </a>
             </div>
 
-            <a href="#" class="about__btn white-btn">
+            <a href="#" class="about__btn white-btn desk768">
                 Подробнее о компании
                 <img src="assets/img/icons/right3.svg" alt="arrow">
             </a>
@@ -414,55 +461,28 @@
                     </picture>
                     <h4>Насосные станции</h4>  
                 </a>
-                <!--<a href="#" class="products__item">
-                    <picture>
-                        <img src="assets/img/product4.png" alt="product">      
-                    </picture>
-                    <h4>Блочно-модульные здания</h4>  
-                </a>
-                <a href="#" class="products__item">
-                    <picture>
-                        <img src="assets/img/product5.png" alt="product">      
-                    </picture>
-                    <h4>Мобильная базовая станция</h4>  
-                </a>
-                <a href="#" class="products__item">
-                    <picture>
-                        <img src="assets/img/product6.png" alt="product">      
-                    </picture>
-                    <h4>Мачты и антенны</h4>  
-                </a>
-                <a href="#" class="products__item">
-                    <picture>
-                        <img src="assets/img/product7.png" alt="product">      
-                    </picture>
-                    <h4>Триподы</h4>  
-                </a>
-                <a href="#" class="products__item">
-                    <picture>
-                        <img src="assets/img/product8.png" alt="product">      
-                    </picture>
-                    <h4>Передвижная насосная станция</h4>  
-                </a>-->
+                
             </div>
         </section>
 
         <div class="form1">
+            <div class="form1__bg">
+                <picture>
+                    <img src="assets/img/form1-bg.png" alt="bg">
+                </picture>                    
+            </div>
             <div class="form1__img">
                 <picture>
                     <img src="assets/img/form1.png" alt="man">
                 </picture>
             </div>
             <div class="form1__content">
-                <div class="form1__bg">
-                    <picture>
-                        <img src="assets/img/form1-bg.png" alt="bg">
-                    </picture>                    
-                </div>
-                <div class="form1__title">Не знаете, какое оборудование выбрать?</div>
-                <div class="form1__text">
-                    Грамотные специалисты ответят на все ваши вопросы. Оставьте ваши 
-                    контакты, и мы поможем подобрать подходящее решение.
+                <div class="form1__top">
+                    <div class="form1__title">Не знаете, какое оборудование выбрать?</div>
+                    <div class="form1__text">
+                        Грамотные специалисты ответят на все ваши вопросы. Оставьте ваши 
+                        контакты, и мы поможем подобрать подходящее решение.
+                    </div>
                 </div>
                 <a href="#" class="form1__btn">
                     Запрос на продукцию
@@ -1004,9 +1024,9 @@
                 </a>
             </div>
         </section>
-    </div>
+    </div> 
 
-    <section class="choose">
+    <!-- <section class="choose">
         <div class="container">
             <div class="choose__content">
                 <div class="choose__left">
@@ -1085,128 +1105,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </main> 
-<footer class="footer">
-    <div class="footer__bg">
-        <picture>
-            <img src="/assets/img/footer-bg.png" alt="footer">
-        </picture>
-    </div>
-    <div class="container">
-        <div class="footer__top">
-            <div class="footer__left">
-                <a href="/">
-                    <img class="footer__logo" src="/assets/img/icons/logo1.svg" alt="logo">
-                </a>
-                <div class="footer__text">
-                    Производим промышленное  оборудование, насосные решения и 
-                    блочно-модульные комплексы для надежной работы и развития вашего 
-                    бизнеса.
-                </div>
 
-                <a href="" class="footer__btn">
-                    Скачать каталог
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
-                        <path d="M1 6.36377C0.447715 6.36377 0 6.81148 0 7.36377C0 7.91605 0.447715 8.36377 1 8.36377V7.36377V6.36377ZM1 7.36377V8.36377H16V7.36377V6.36377H1V7.36377ZM16.7071 8.07088C17.0976 7.68035 17.0976 7.04719 16.7071 6.65666L10.3431 0.292702C9.95262 -0.0978227 9.31946 -0.0978227 8.92893 0.292702C8.53841 0.683226 8.53841 1.31639 8.92893 1.70692L14.5858 7.36377L8.92893 13.0206C8.53841 13.4111 8.53841 14.0443 8.92893 14.4348C9.31946 14.8254 9.95262 14.8254 10.3431 14.4348L16.7071 8.07088Z" fill="white"/>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="footer__right">
-                <div class="footer__item">
-                    <b>Навигация</b>
-                    <ul>
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">О компании</a></li>
-                        <li><a href="">Продукция</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Проекты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__item">
-                    <b>Компания</b>
-                    <ul>
-                        <li><a href="">Новости</a></li>
-                        <li><a href="">Карьера</a></li>
-                        <li><a href="">Сертификаты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__item">
-                    <b>Контакты</b>
-                    <div class="footer__elem">
-                        <span>Горячая линия:</span>
-                        <a href="8 771 929 0180" class="footer__info">8 771 929 0180</a>
-                    </div>
-                    <div class="footer__elem">
-                        <span>Email отдела продаж:</span>
-                        <a href="mailto:pkcmsales@gmail.com" class="footer__info">pkcmsales@gmail.com</a>
-                    </div>
-
-                    <div class="footer__elem">
-                        <span>Основная почта:</span>
-                        <a href="mailto:pkcelinmash@gmail.com" class="footer__info">pkcelinmash@gmail.com</a>
-                    </div>
-                </div>
-
-                 <div class="footer__item">
-                    <b>Адрес и режим работы</b>
-                    <div class="footer__elem">
-                        <span>Адрес:</span>
-                        <p class="footer__info">г. Астана, ул. Достык, 20, БЦ «Санкт-Петербург»</p>
-                    </div>
-                    <div class="footer__elem">
-                        <span>Режим работы:</span>
-                        <p class="footer__info">Пн–Пт, с 09:00 до 18:00</p>
-                    </div>
-
-                    <div class="footer__elem contact-us">
-                        <span>
-                            Связаться с нами
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
-                                <path d="M1 6.36377C0.447715 6.36377 0 6.81148 0 7.36377C0 7.91605 0.447715 8.36377 1 8.36377V7.36377V6.36377ZM1 7.36377V8.36377H16V7.36377V6.36377H1V7.36377ZM16.7071 8.07088C17.0976 7.68035 17.0976 7.04719 16.7071 6.65666L10.3431 0.292702C9.95262 -0.0978227 9.31946 -0.0978227 8.92893 0.292702C8.53841 0.683226 8.53841 1.31639 8.92893 1.70692L14.5858 7.36377L8.92893 13.0206C8.53841 13.4111 8.53841 14.0443 8.92893 14.4348C9.31946 14.8254 9.95262 14.8254 10.3431 14.4348L16.7071 8.07088Z" fill="white" fill-opacity="0.6"/>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="footer__line">
-
-        <div class="footer__bot">
-            <div class="footer__left2">
-                <span>© 2026 ПК Целинмаш. Все права защищены</span>
-                <a href="#">Политика конфиденциальности</a>
-            </div>
-
-            <div class="footer__socials">
-                <ul>
-                    <li>
-                        <a>
-                            <img src="assets/img/icons/insta.svg">
-                        </a>
-                    </li>
-                     <li>
-                        <a>
-                            <img src="assets/img/icons/yt.svg">
-                        </a>
-                    </li>
-                     <li>
-                        <a>
-                            <img src="assets/img/icons/whtsp2.svg">
-                        </a>
-                    </li>
-                     <li>
-                        <a>
-                            <img src="assets/img/icons/lk.svg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer> 
 
 <div class="preloader">
     <img src="assets/img/icons/logo1.svg" alt="logo">
