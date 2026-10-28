@@ -757,7 +757,12 @@
         </section>
     </div> 
 
-    <!-- <section class="choose">
+    <section class="choose">
+        <div class="choose__bg mob576">
+            <picture>
+                <img src="assets/img/form1-bg.png" alt="bg">
+            </picture>  
+        </div>
         <div class="container">
             <div class="choose__content">
                 <div class="choose__left">
@@ -771,30 +776,39 @@
                             оптимальное решение под вашу задачу.
                         </p>
                     </div>
-                    <img src="assets/img/choose.png" alt="icon">
+                    <img class="choose__img" src="assets/img/choose.png" alt="icon">
+                    <div class="choose__btn2 mob768 blue-btn" onClick="openChoose()">
+                        <span></span>
+                        Получить консультацию
+                        <img src="assets/img/icons/right3.svg" alt="arrow">
+                    </div>
                 </div>
                 <div class="choose__right">
+                    <div class="choose__line mob768"></div>
+                    <div class="choose__close mob768" onClick="closeChoose()">
+                        <img src="assets/img/icons/close.svg" alt="icon">
+                    </div>
                     <form action="" class="choose__form">
                         <div class="choose__items">
                             <div class="choose__item">
                                 <span class="choose__label main-label">Контактное лицо</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/login.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="ФИО" required>
+                                    <input class="" type="text" placeholder="ФИО" required>
                                 </div>
                             </div>
                             <div class="choose__item">
                                 <span class="choose__label main-label">Компания</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/building.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="Название компании" required>
+                                    <input class="" type="text" placeholder="Название компании" required>
                                 </div>
                             </div>
                             <div class="choose__item">
                                 <span class="choose__label main-label">Телефон</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/phone2.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="+7 (..) ...-..-.." required>
+                                    <input class="" type="text" placeholder="+7 (..) ...-..-.." required>
                                 </div>
                             </div>
                             <div class="choose__item">
@@ -836,5 +850,5 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 </main>

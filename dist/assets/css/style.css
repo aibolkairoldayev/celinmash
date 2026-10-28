@@ -785,6 +785,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.mob576 {
+  display: none;
+}
+
+.mob480 {
+  display: none;
+}
+
 @media (max-width: 1310px) {
   .container {
     max-width: 1180px;
@@ -894,10 +902,26 @@ body::-webkit-scrollbar {
   .main-title {
     font-size: 28px;
   }
+
+  .desk576 {
+    display: none;
+  }
+
+  .mob576 {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
   .main-title {
     font-size: 24px;
+  }
+
+  .desk480 {
+    display: none;
+  }
+
+  .mob480 {
+    display: block;
   }
 }

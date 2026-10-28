@@ -281,3 +281,29 @@
         display: block;
     }
 }
+
+.desk576 {
+    @media(max-width: 576px) {
+        display: none;
+    }
+}
+
+.mob576 {
+    display: none;
+    @media(max-width: 576px) {
+        display: block;
+    }
+}
+
+.desk480 {
+    @media(max-width: 480px) {
+        display: none;
+    }
+}
+
+.mob480 {
+    display: none;
+    @media(max-width: 480px) {
+        display: block;
+    }
+}

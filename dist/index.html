@@ -1026,7 +1026,12 @@
         </section>
     </div> 
 
-    <!-- <section class="choose">
+    <section class="choose">
+        <div class="choose__bg mob576">
+            <picture>
+                <img src="assets/img/form1-bg.png" alt="bg">
+            </picture>  
+        </div>
         <div class="container">
             <div class="choose__content">
                 <div class="choose__left">
@@ -1040,30 +1045,39 @@
                             оптимальное решение под вашу задачу.
                         </p>
                     </div>
-                    <img src="assets/img/choose.png" alt="icon">
+                    <img class="choose__img" src="assets/img/choose.png" alt="icon">
+                    <div class="choose__btn2 mob768 blue-btn" onClick="openChoose()">
+                        <span></span>
+                        Получить консультацию
+                        <img src="assets/img/icons/right3.svg" alt="arrow">
+                    </div>
                 </div>
                 <div class="choose__right">
+                    <div class="choose__line mob768"></div>
+                    <div class="choose__close mob768" onClick="closeChoose()">
+                        <img src="assets/img/icons/close.svg" alt="icon">
+                    </div>
                     <form action="" class="choose__form">
                         <div class="choose__items">
                             <div class="choose__item">
                                 <span class="choose__label main-label">Контактное лицо</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/login.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="ФИО" required>
+                                    <input class="" type="text" placeholder="ФИО" required>
                                 </div>
                             </div>
                             <div class="choose__item">
                                 <span class="choose__label main-label">Компания</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/building.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="Название компании" required>
+                                    <input class="" type="text" placeholder="Название компании" required>
                                 </div>
                             </div>
                             <div class="choose__item">
                                 <span class="choose__label main-label">Телефон</span>
-                                <div class="choose__input">
+                                <div class="choose__input main-input">
                                     <img src="assets/img/icons/phone2.svg" alt="icon">
-                                    <input class="main-input" type="text" placeholder="+7 (..) ...-..-.." required>
+                                    <input class="" type="text" placeholder="+7 (..) ...-..-.." required>
                                 </div>
                             </div>
                             <div class="choose__item">
@@ -1105,9 +1119,159 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 </main> 
+<footer class="footer">
+    <div class="footer__bg">
+        <picture>
+            <img src="/assets/img/footer-bg.png" alt="footer">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__left">
+                <a href="/">
+                    <img class="footer__logo" src="/assets/img/icons/logo1.svg" alt="logo">
+                </a>
+                <div class="footer__text">
+                    Производим промышленное  оборудование, насосные решения и 
+                    блочно-модульные комплексы для надежной работы и развития вашего 
+                    бизнеса.
+                </div>
 
+                <a href="" class="footer__btn">
+                    Скачать каталог
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                        <path d="M1 6.36377C0.447715 6.36377 0 6.81148 0 7.36377C0 7.91605 0.447715 8.36377 1 8.36377V7.36377V6.36377ZM1 7.36377V8.36377H16V7.36377V6.36377H1V7.36377ZM16.7071 8.07088C17.0976 7.68035 17.0976 7.04719 16.7071 6.65666L10.3431 0.292702C9.95262 -0.0978227 9.31946 -0.0978227 8.92893 0.292702C8.53841 0.683226 8.53841 1.31639 8.92893 1.70692L14.5858 7.36377L8.92893 13.0206C8.53841 13.4111 8.53841 14.0443 8.92893 14.4348C9.31946 14.8254 9.95262 14.8254 10.3431 14.4348L16.7071 8.07088Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__item">
+                    <b>Навигация</b>
+                    <ul class="footer__content">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Продукция</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Проекты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <b>Компания</b>
+                    <ul class="footer__content">
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Карьера</a></li>
+                        <li><a href="">Сертификаты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <b>Контакты</b>
+                    <div class="footer__content">
+                        <div class="footer__elem">
+                            <span>Горячая линия:</span>
+                            <a href="8 771 929 0180" class="footer__info">8 771 929 0180</a>
+                        </div>
+                        <div class="footer__elem">
+                            <span>Email отдела продаж:</span>
+                            <a href="mailto:pkcmsales@gmail.com" class="footer__info">pkcmsales@gmail.com</a>
+                        </div>
+
+                        <div class="footer__elem">
+                            <span>Основная почта:</span>
+                            <a href="mailto:pkcelinmash@gmail.com" class="footer__info">pkcelinmash@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <b>Адрес и режим работы</b>
+                    <div class="footer__content">
+                        <div class="footer__elem">
+                            <span>Адрес:</span>
+                            <p class="footer__info">г. Астана, ул. Достык, 20, БЦ «Санкт-Петербург»</p>
+                        </div>
+                        <div class="footer__elem">
+                            <span>Режим работы:</span>
+                            <p class="footer__info">Пн–Пт, с 09:00 до 18:00</p>
+                        </div>
+
+                        <div class="footer__elem contact-us">
+                            <span>
+                                Связаться с нами
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M1 6.36377C0.447715 6.36377 0 6.81148 0 7.36377C0 7.91605 0.447715 8.36377 1 8.36377V7.36377V6.36377ZM1 7.36377V8.36377H16V7.36377V6.36377H1V7.36377ZM16.7071 8.07088C17.0976 7.68035 17.0976 7.04719 16.7071 6.65666L10.3431 0.292702C9.95262 -0.0978227 9.31946 -0.0978227 8.92893 0.292702C8.53841 0.683226 8.53841 1.31639 8.92893 1.70692L14.5858 7.36377L8.92893 13.0206C8.53841 13.4111 8.53841 14.0443 8.92893 14.4348C9.31946 14.8254 9.95262 14.8254 10.3431 14.4348L16.7071 8.07088Z" fill="white" fill-opacity="0.6"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="footer__item mob480">
+                    <b>Наши соцсети</b>
+                    <ul class="footer__social2 footer__content">
+                        <li>
+                            <a>
+                                <img src="assets/img/icons/insta.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="assets/img/icons/yt.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="assets/img/icons/whtsp2.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="assets/img/icons/lk.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer__line">
+
+        <div class="footer__bot">
+            <div class="footer__left2">
+                <span>© 2026 ПК Целинмаш. Все права защищены</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+            <div class="footer__socials">
+                <ul>
+                    <li>
+                        <a>
+                            <img src="assets/img/icons/insta.svg">
+                        </a>
+                    </li>
+                     <li>
+                        <a>
+                            <img src="assets/img/icons/yt.svg">
+                        </a>
+                    </li>
+                     <li>
+                        <a>
+                            <img src="assets/img/icons/whtsp2.svg">
+                        </a>
+                    </li>
+                     <li>
+                        <a>
+                            <img src="assets/img/icons/lk.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <div class="preloader">
     <img src="assets/img/icons/logo1.svg" alt="logo">

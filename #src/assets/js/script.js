@@ -141,3 +141,21 @@ $(window).on('resize', function () {
         $('.header__btn, .burger').removeClass('open');
     }
 });
+
+//choose modal open/close
+function openChoose() {
+    $('.choose__right').addClass('show');
+    $('body').css('overflow', 'hidden');
+}
+function closeChoose() {
+    $('.choose__right').removeClass('show');
+    $('body').css('overflow', 'unset');
+}
+
+//footer accordion func
+$('.footer__item b').on('click', function () {
+    const $item = $(this).closest('.footer__item');
+
+    $('.footer__item').not($item).removeClass('show');
+    $item.toggleClass('show');
+});
