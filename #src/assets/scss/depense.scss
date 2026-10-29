@@ -112,7 +112,7 @@
         &.show {
             .vacs {
                 &__hidden {
-                    max-height: 600px;
+                    max-height: 1200px;
                     padding: 30px;
                 }
                 &__line {
@@ -219,6 +219,7 @@
     }
     &__btn2 {
         margin-left: auto;
+        cursor: pointer;
     }
 }
 
@@ -468,6 +469,9 @@
             height: 80px;
             width: 100%;
             margin-bottom: 20px;
+        }
+        .custom-select {
+            margin-bottom: 17px;
         }
     }
     &__items {

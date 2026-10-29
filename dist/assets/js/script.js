@@ -159,3 +159,186 @@ $('.footer__item b').on('click', function () {
     $('.footer__item').not($item).removeClass('show');
     $item.toggleClass('show');
 });
+
+//custom dropdown
+$(function () {
+    const selectSelector = '.custom-select';
+    const triggerSelector = '.custom-select__trigger';
+    const optionSelector = '.custom-select__option';
+
+    function closeSelect($select) {
+        $select.removeClass('is-open');
+
+        $select.find(triggerSelector).attr('aria-expanded', 'false');
+        $select.find('.custom-select__option').attr('tabindex', '-1');
+    }
+
+    function closeAllSelects($except) {
+        $(selectSelector).each(function () {
+            const $select = $(this);
+
+            if (!$except || !$select.is($except)) {
+                closeSelect($select);
+            }
+        });
+    }
+
+    function openSelect($select) {
+    closeAllSelects($select);
+
+    $select.addClass('is-open');
+    $select.find(triggerSelector).attr('aria-expanded', 'true');
+
+    const $options = $select.find(optionSelector).not('.is-disabled');
+    const $selected = $options.filter('.is-selected').first();
+
+    $options.removeClass('is-focused').attr('tabindex', '-1');
+    if ($selected.length) {
+        $selected.addClass('is-focused').attr('tabindex', '0');
+    }
+}
+
+    function selectOption($select, $option) {
+        if (!$option.length || $option.hasClass('is-disabled')) {
+            return;
+        }
+
+        const text = $.trim($option.text());
+        const value = $option.attr('data-value') ?? text;
+
+        $select.find('.custom-select__value').text(text);
+
+        $select.find('.custom-select__input').val(value).trigger('change');
+
+        $select.find(optionSelector)
+            .removeClass('is-selected is-focused')
+            .attr('aria-selected', 'false')
+            .attr('tabindex', '-1');
+
+        $option
+            .addClass('is-selected')
+            .attr('aria-selected', 'true');
+
+        closeSelect($select);
+    }
+
+    // Открытие и закрытие по клику
+    $(document).on('click', triggerSelector, function () {
+        const $select = $(this).closest(selectSelector);
+
+        if ($select.hasClass('is-open')) {
+            closeSelect($select);
+        } else {
+            openSelect($select);
+        }
+    });
+
+    // Выбор варианта
+    $(document).on('click', optionSelector, function () {
+        const $option = $(this);
+        const $select = $option.closest(selectSelector);
+
+        selectOption($select, $option);
+    });
+
+    // Закрытие при клике за пределами dropdown
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest(selectSelector).length) {
+            closeAllSelects();
+        }
+    });
+
+    // Управление клавиатурой
+    $(document).on('keydown', function (event) {
+        const $target = $(event.target);
+        const $select = $target.closest(selectSelector);
+
+        if (!$select.length) {
+            return;
+        }
+
+        const isTrigger = $target.is(triggerSelector);
+        const isOption = $target.is(optionSelector);
+
+        if (!isTrigger && !isOption) {
+            return;
+        }
+
+        const $options = $select.find(optionSelector).not('.is-disabled');
+        const $current = $options.filter('.is-focused');
+        let index = $options.index($current);
+
+        if (event.key === 'Escape') {
+            if ($select.hasClass('is-open')) {
+                event.preventDefault();
+                closeSelect($select);
+                $select.find(triggerSelector).trigger('focus');
+            }
+
+            return;
+        }
+
+        if (event.key === 'Tab') {
+            closeSelect($select);
+            return;
+        }
+
+        if (
+            isTrigger &&
+            !event.altKey &&
+            ['ArrowDown', 'ArrowUp', 'Enter', ' '].includes(event.key)
+        ) {
+            event.preventDefault();
+
+            if (!$select.hasClass('is-open')) {
+                openSelect($select);
+                return;
+            }
+        }
+
+        if (!$select.hasClass('is-open')) {
+            return;
+        }
+
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+            event.preventDefault();
+
+            if (!$options.length) {
+                return;
+            }
+
+            if (index < 0) {
+                index = event.key === 'ArrowDown' ? -1 : 0;
+            }
+
+            index += event.key === 'ArrowDown' ? 1 : -1;
+
+            if (index >= $options.length) {
+                index = 0;
+            }
+
+            if (index < 0) {
+                index = $options.length - 1;
+            }
+
+            $options.removeClass('is-focused').attr('tabindex', '-1');
+
+            const $next = $options.eq(index);
+
+            $next.addClass('is-focused').attr('tabindex', '0');
+            $next[0].scrollIntoView({ block: 'nearest' });
+
+            return;
+        }
+
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+
+            const $focused = $options.filter('.is-focused').first();
+
+            if ($focused.length) {
+                selectOption($select, $focused);
+            }
+        }
+    });
+});

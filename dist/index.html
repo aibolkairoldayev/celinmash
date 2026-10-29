@@ -1082,25 +1082,73 @@
                             </div>
                             <div class="choose__item">
                                 <span class="choose__label main-label">Интересующая продукция</span>
-                                <div class="choose__input">
-                                    <select required>
-                                        <option value="">Выберите категорию</option>
-                                        <option value="1">Насосное оборудование</option>
-                                        <option value="2">Запасные части</option>
-                                        <option value="3">Насосные станции</option>
-                                    </select>
+                                <div class="custom-select">
+                                    <button
+                                        type="button"
+                                        class="custom-select__trigger main-input"
+                                        aria-haspopup="listbox"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="custom-select__value">Выберите категорию</span>
+
+                                        <span class="custom-select__arrow">
+                                            <img src="assets/img/icons/more3.svg" alt="icon">
+                                        </span>
+                                    </button>
+
+                                    <div class="custom-select__dropdown">
+                                        <ul class="custom-select__list" role="listbox">
+                                            <li
+                                                class="custom-select__option"
+                                                role="option"
+                                                aria-selected="false"
+                                                data-value="sales"
+                                                tabindex="-1"
+                                            >
+                                                Насосное оборудование
+                                            </li>
+
+                                            <li
+                                                class="custom-select__option"
+                                                role="option"
+                                                aria-selected="false"
+                                                data-value="engineer"
+                                                tabindex="-1"
+                                            >
+                                                Запасные части
+                                            </li>
+
+                                            <li
+                                                class="custom-select__option"
+                                                role="option"
+                                                aria-selected="false"
+                                                data-value="designer"
+                                                tabindex="-1"
+                                            >
+                                                Насосные станции
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Значение для отправки формы -->
+                                    <input
+                                        type="hidden"
+                                        class="custom-select__input"
+                                        name="position"
+                                        value=""
+                                    >
                                 </div>
                             </div>
                         </div>
 
                         <span class="choose__label main-label">Дополнительный комментарий</span>
                         <textarea class="main-input" placeholder="Расскажите о вашей задаче и пожеланиях"></textarea>
-                        <span class="choose__label">Опросный лист / файл — при необходимости</span>
-                        <div class="choose__file">
-                            <input type="file" id="file" name="file">
-                            <label for="file">
+                        <span class="choose__label main-label">Опросный лист / файл — при необходимости</span>
+                        <div class="choose__file main-file">
+                            <input type="file" name="file" class="main-file__input">
+                            <label for="file" class="main-file__label">
                                 <img src="assets/img/icons/file.svg" alt="icon">
-                                <div class="choose__file--text">
+                                <div class="choose__file--text main-file__text">
                                     <p>Нажмите или перетащите файл сюда</p>
                                     <span>Формат: PDF, DOC, DOCX, XLS, XLSX, PNG. До 10 мб</span>
                                 </div>
@@ -1308,13 +1356,61 @@
                 </div>
                 <div class="choose__item main-select">
                     <span class="choose__label main-label">Интересующая продукция</span>
-                    <div class="choose__input">
-                        <select required>
-                            <option value="">Выберите категорию</option>
-                            <option value="1">Насосное оборудование</option>
-                            <option value="2">Запасные части</option>
-                            <option value="3">Насосные станции</option>
-                        </select>
+                    <div class="custom-select">
+                        <button
+                            type="button"
+                            class="custom-select__trigger main-input"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                        >
+                            <span class="custom-select__value">Выберите категорию</span>
+
+                            <span class="custom-select__arrow">
+                                <img src="assets/img/icons/more3.svg" alt="icon">
+                            </span>
+                        </button>
+
+                        <div class="custom-select__dropdown">
+                            <ul class="custom-select__list" role="listbox">
+                                <li
+                                    class="custom-select__option"
+                                    role="option"
+                                    aria-selected="false"
+                                    data-value="sales"
+                                    tabindex="-1"
+                                >
+                                    Насосное оборудование
+                                </li>
+
+                                <li
+                                    class="custom-select__option"
+                                    role="option"
+                                    aria-selected="false"
+                                    data-value="engineer"
+                                    tabindex="-1"
+                                >
+                                    Запасные части
+                                </li>
+
+                                <li
+                                    class="custom-select__option"
+                                    role="option"
+                                    aria-selected="false"
+                                    data-value="designer"
+                                    tabindex="-1"
+                                >
+                                    Насосные станции
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Значение для отправки формы -->
+                        <input
+                            type="hidden"
+                            class="custom-select__input"
+                            name="position"
+                            value=""
+                        >
                     </div>
                 </div>
             </div>
@@ -1347,21 +1443,75 @@
 
 <div class="modal career-m">
     <div class="modal__bg"></div>
-    <div class="modal__content">
+    <div class="modal__content career__modal">
         <div class="modal__close" onclick="closeModal2()">
             <img src="assets/img/icons/close.svg" alt="icon">
         </div>
         <form action="" class="career-m__form">
             <div class="main-label">Название вакансии</div>
-            <div class="main-select career-m__select">
-                <select name="" id="">
-                    <option value="">Название вакансии</option>
-                    <option value="">Инженер по подбору насосного оборудования</option>
-                    <option value="">Ведущий инженер-проектировщик электроснабженния и автоматизации</option>
-                    <option value="">Менеджер по продажам насосного оборудования</option>
-                    <option value="">Инженер по подбору насосного оборудования</option>
-                    <option value="">Ведущий инженер-проектировщик электроснабженния и автоматизации</option>
-                </select>
+            <div class="custom-select">
+                <button
+                    type="button"
+                    class="custom-select__trigger main-input"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                >
+                    <span class="custom-select__value">Название вакансии</span>
+
+                    <span class="custom-select__arrow">
+                        <img src="assets/img/icons/more3.svg" alt="icon">
+                    </span>
+                </button>
+
+                <div class="custom-select__dropdown">
+                    <ul class="custom-select__list" role="listbox">
+                        <li
+                            class="custom-select__option"
+                            role="option"
+                            aria-selected="false"
+                            data-value="1"
+                            tabindex="-1"
+                        >
+                            Инженер по подбору насосного оборудования
+                        </li>
+
+                        <li
+                            class="custom-select__option"
+                            role="option"
+                            aria-selected="false"
+                            data-value="2"
+                            tabindex="-1"
+                        >
+                            Ведущий инженер-проектировщик электроснабженния и автоматизации
+                        </li>
+
+                        <li
+                            class="custom-select__option"
+                            role="option"
+                            aria-selected="false"
+                            data-value="3"
+                            tabindex="-1"
+                        >
+                            Менеджер по продажам насосного оборудования
+                        </li>
+                        <li
+                            class="custom-select__option"
+                            role="option"
+                            aria-selected="false"
+                            data-value="4"
+                            tabindex="-1"
+                        >
+                            Инженер по подбору насосного оборудования
+                        </li>
+                    </ul>
+                </div>
+
+                <input
+                    type="hidden"
+                    class="custom-select__input"
+                    name="position"
+                    value=""
+                >
             </div>
 
             <div class="main-label">ФИО</div>
@@ -1383,10 +1533,10 @@
         
             <div class="main-label">Резюме</div>
             <div class="main-file">
-                <input type="file" id="file" name="file">
-                <label for="file">
+                <input type="file" name="file" class="main-file__input">
+                <label for="file" class="main-file__label">
                     <img src="assets/img/icons/file.svg" alt="icon">
-                    <div class="choose__file--text">
+                    <div class="main-file__text">
                         <p>Нажмите или перетащите файл сюда</p>
                         <span>Формат: PDF, DOC, DOCX, XLS, XLSX, PNG. До 10 мб</span>
                     </div>

@@ -371,7 +371,7 @@
 }
 
 .vacs__item.show .vacs__hidden {
-  max-height: 600px;
+  max-height: 1200px;
   padding: 30px;
 }
 
@@ -502,6 +502,7 @@
 
 .vacs__btn2 {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .life {
@@ -771,6 +772,10 @@
   height: 80px;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.career-m__form .custom-select {
+  margin-bottom: 17px;
 }
 
 .career-m__items {
