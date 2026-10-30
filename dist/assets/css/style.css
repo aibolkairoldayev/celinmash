@@ -699,6 +699,14 @@ body::-webkit-scrollbar {
   color: #FFF;
 }
 
+.type2 .header__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #FFF;
+  padding: 5px 12px;
+}
+
 .main-label {
   color: #2C305B;
   font-size: 14px;
@@ -1070,6 +1078,10 @@ body::-webkit-scrollbar {
     margin-bottom: 20px;
   }
 
+  .main-banner {
+    margin-bottom: 40px;
+  }
+
   .desk768 {
     display: none;
   }
@@ -1102,6 +1114,10 @@ body::-webkit-scrollbar {
 
   .main-title {
     font-size: 28px;
+  }
+
+  .main-banner {
+    margin-bottom: 30px;
   }
 
   .desk576 {

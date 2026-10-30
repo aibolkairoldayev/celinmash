@@ -218,6 +218,15 @@
             color: #FFF;
         }
     }
+    .header {
+        &__btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            border: 1px solid #FFF;
+            padding: 5px 12px;
+        }
+    }
 }
 
 .main-label {
@@ -254,6 +263,12 @@
 
 .main-banner {
     margin-bottom: 60px;
+    @media(max-width: 768px) {
+        margin-bottom: 40px;
+    }
+    @media(max-width: 576px) {
+        margin-bottom: 30px;
+    }
     &__bg {
         position: absolute;
         top: 0;
