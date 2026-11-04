@@ -342,3 +342,27 @@ $(function () {
         }
     });
 });
+
+//career page video play func
+$(document).ready(function () {
+
+    $('.banner2').each(function () {
+
+        const $banner = $(this);
+        const video = $banner.find('.banner2__video video')[0];
+
+        if (!video) return;
+
+        $banner.find('.banner2__btn').on('click', function () {
+
+            $banner.addClass('video-active');
+
+            video.play().catch(function (error) {
+                console.log('Не удалось запустить видео:', error);
+            });
+
+        });
+
+    });
+
+});

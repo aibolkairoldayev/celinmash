@@ -841,6 +841,7 @@ body::-webkit-scrollbar {
       -ms-flex: 1;
           flex: 1;
   min-width: 0;
+  font-size: 12px;
 }
 
 .custom-select__arrow {

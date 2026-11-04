@@ -14,7 +14,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        background: #000;
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
     }
     .container {
         height: 100%;
@@ -25,6 +36,18 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 0 0 30px;
+    }
+    &.video-active {
+        .banner2__video {
+            opacity: 1;
+            visibility: visible;
+        }
+        .banner2__bg,
+        .banner2__content {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
     }
     &__title {
         margin-bottom: 20px;
@@ -58,6 +81,7 @@
         backdrop-filter: blur(24px);
         width: fit-content;
         margin-left: auto;
+        cursor: pointer;
     }
     &__btn {
         display: flex;
@@ -695,6 +719,12 @@
     &__form {
         input {
             width: 100%;
+            &::placeholder {
+                @media (max-width: 576px) {
+                    font-size: 12px;
+                }
+                
+            }
         }
         textarea {
             height: 80px;
@@ -703,6 +733,13 @@
         }
         .custom-select {
             margin-bottom: 17px;
+        }
+        .main-file__text {
+            span {
+                @media (max-width: 576px) {
+                    font-size: 8px;
+                }
+            }
         }
     }
     &__items {
