@@ -365,4 +365,41 @@ $(document).ready(function () {
 
     });
 
+    //category filter accordion
+    $(function () {
+        $('.categ__form').each(function () {
+            $(this).find('.categ__form-heading[aria-expanded="false"]')
+                .next('.categ__form-options')
+                .hide();
+        });
+
+        $(document).on('click', '.categ__form-heading', function () {
+            const $heading = $(this);
+            const $options = $heading.next('.categ__form-options');
+            const isExpanded = $heading.attr('aria-expanded') === 'true';
+
+            $heading.attr('aria-expanded', String(!isExpanded));
+            $heading.closest('.categ__form-group').toggleClass('is-open', !isExpanded);
+
+            if (isExpanded) {
+                $options.stop(true, true).slideUp(200);
+            } else {
+                $options.stop(true, true).slideDown(200);
+            }
+        });
+    });
+
+});
+
+// category page tab func 
+$('.categ__item').on('click', function () {
+    const index = $(this).index();
+
+    // Переключаем active у категорий
+    $('.categ__item').removeClass('active');
+    $(this).addClass('active');
+
+    // Переключаем active у соответствующего элемента
+    $('.nasos__elems').removeClass('active');
+    $('.nasos__elems').eq(index).addClass('active');
 });
