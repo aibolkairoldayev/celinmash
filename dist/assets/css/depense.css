@@ -2148,6 +2148,133 @@
   line-height: 111.111%;
 }
 
+.good {
+  margin-bottom: 90px;
+}
+
+.good__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.good__left {
+  width: 55%;
+}
+
+.good__right {
+  width: calc(45% - 20px);
+}
+
+.good__slider--big {
+  padding: 50px 70px;
+  border-radius: 10px;
+  border: 1px solid #DEDFE3;
+  margin-bottom: 15px;
+}
+
+.good__slider--small {
+  height: 130px;
+}
+
+.good__item2 {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #DEDFE3;
+  height: 130px;
+}
+
+.good__item2 img {
+  width: 90%;
+  margin-right: 5%;
+  height: auto;
+}
+
+.good__name {
+  color: #2C305B;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.333%;
+  margin-bottom: 20px;
+}
+
+.good__info {
+  padding: 20px;
+  border-radius: 20px;
+  background: #F4F8FC;
+}
+
+.good__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.good__elem img {
+  width: 30px;
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+.good__left2 span {
+  display: block;
+  margin-bottom: 3px;
+  color: #7B7B7B;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.good__left2 p {
+  color: #7B7B7B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.good__btn {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.good__btn2 {
+  width: 100%;
+  color: #2C305B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 1400px) {
   .footer__right {
     gap: 55px;

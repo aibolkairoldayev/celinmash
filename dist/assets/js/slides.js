@@ -178,3 +178,19 @@ if ($(window).width() < 992) {
         ],
     });
 }
+
+//product page slider
+ $('.good__slider--big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.good__slider--small'
+});
+$('.good__slider--small').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.good__slider--big',
+  dots: false,
+  arrows: false,
+});

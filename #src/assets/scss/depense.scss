@@ -1982,3 +1982,103 @@
         }
     }
 }
+
+.good {
+    margin-bottom: 90px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    &__left {
+        width: 55%;
+    }
+    &__right {
+        width: calc(45% - 20px);
+    }
+    &__slider {
+        &--big {
+            padding: 50px 70px;
+            border-radius: 10px;
+            border: 1px solid #DEDFE3;
+            margin-bottom: 15px;
+        }
+        &--small {
+            height: 130px;
+        }
+    }
+    &__item2 {
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #DEDFE3;
+        height: 130px;
+        img {
+            width: 90%;
+            margin-right: 5%;
+            height: auto;
+        }
+    }
+    &__name {
+        color: #2C305B;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133.333%;
+        margin-bottom: 20px;
+    }
+    &__info {
+        padding: 20px;
+        border-radius: 20px;
+        background: #F4F8FC;
+    }
+    &__elem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        img {
+            width: 30px;
+            min-width: 30px;
+            margin-right: 20px;
+        }
+    }
+    &__left2 {
+        span {
+            display: block;
+            margin-bottom: 3px;
+            color: #7B7B7B;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p {
+            color: #7B7B7B;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__btn {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        width: 100%;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150% ;
+        display: flex;
+        justify-content: center;
+    }
+    &__btn2 {
+        width: 100%;
+        color: #2C305B;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        display: flex;
+        justify-content: center;
+    }
+}
