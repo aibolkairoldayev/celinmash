@@ -193,4 +193,5 @@ $('.good__slider--small').slick({
   asNavFor: '.good__slider--big',
   dots: false,
   arrows: false,
+  focusOnSelect: true,
 });

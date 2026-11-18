@@ -403,3 +403,33 @@ $('.categ__item').on('click', function () {
     $('.nasos__elems').removeClass('active');
     $('.nasos__elems').eq(index).addClass('active');
 });
+
+//product page tabs func
+$('.good__nav').on('click', function () {
+    const index = $(this).index();
+
+    // Переключаем active у категорий
+    $('.good__nav').removeClass('active');
+    $(this).addClass('active');
+
+    // Переключаем active у соответствующего элемента
+    $('.good__content2').removeClass('active');
+    $('.good__content2').eq(index).addClass('active');
+});
+
+//product page docs accordion func
+$('.good__item3').on('click', function(e) {
+    // Если кликнули по ссылке — не трогаем аккордеон
+    if ($(e.target).closest('a.good__right3').length) {
+        return;
+    }
+
+    // Если элемент уже открыт — закрываем его
+    if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
+    } else {
+        // Закрываем остальные и открываем текущий
+        $('.good__item3').removeClass('open');
+        $(this).addClass('open');
+    }
+});
