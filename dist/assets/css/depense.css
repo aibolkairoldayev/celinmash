@@ -2274,6 +2274,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 15px;
 }
 
 .good__navs {
@@ -2624,6 +2625,59 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  line-height: 120%;
+  display: block;
+  text-align: center;
+}
+
+.done {
+  margin-bottom: 50px;
+}
+
+.done__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.done .projects__item {
+  width: 310px;
+}
+
+.viewed {
+  margin-bottom: 90px;
+}
+
+.viewed__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.viewed__item {
+  width: 310px;
+  border-radius: 10px;
+  background: #FFF;
+  -webkit-box-shadow: -1px -1px 8px 0 rgba(61, 61, 61, 0.08), 2px 2px 8px 0 rgba(61, 61, 61, 0.07);
+          box-shadow: -1px -1px 8px 0 rgba(61, 61, 61, 0.08), 2px 2px 8px 0 rgba(61, 61, 61, 0.07);
+  padding: 40px 20px;
+}
+
+.viewed__item img {
+  height: 150px;
+  width: auto;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 40px;
+}
+
+.viewed__item b {
+  color: #183E47;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 120%;
   display: block;
   text-align: center;

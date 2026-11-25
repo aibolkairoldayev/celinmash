@@ -2081,6 +2081,7 @@
         line-height: 150%;
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
     }
     &__navs {
         display: flex;
@@ -2384,3 +2385,46 @@
     }
 }
 
+.done {
+    margin-bottom: 50px;
+    &__items {
+        display: flex;
+        gap: 20px;
+    }
+    .projects {
+        &__item {
+            width: 310px;
+        }
+    }
+}
+
+.viewed {
+    margin-bottom: 90px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &__item {
+        width: 310px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: -1px -1px 8px 0 rgba(61, 61, 61, 0.08), 2px 2px 8px 0 rgba(61, 61, 61, 0.07);
+        padding: 40px 20px;
+        img {
+            height: 150px;
+            width: auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+        }
+        b {
+            color: #183E47;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            display: block;
+            text-align: center;
+        }
+    }
+}
