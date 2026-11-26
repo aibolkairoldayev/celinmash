@@ -2351,6 +2351,12 @@
             text-align: center;
         }
     }
+    &__content4 {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
 }
 
 .production {
@@ -2425,6 +2431,30 @@
             line-height: 120%;
             display: block;
             text-align: center;
+        }
+    }
+}
+
+.row {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__item {
+        width: 24px;
+        cursor: pointer;
+        &.active {
+            cursor: default;
+        }
+        img {
+            width: 100%;
+            min-width: 24px;
         }
     }
 }

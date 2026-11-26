@@ -324,6 +324,7 @@ body::-webkit-scrollbar {
 }
 
 .submenu__item {
+  display: block;
   width: 305px;
   min-width: 305px;
   padding: 10px 15px;
@@ -337,7 +338,6 @@ body::-webkit-scrollbar {
 
 .submenu__item.active {
   background: #F0F2FF;
-  cursor: default;
 }
 
 .submenu__right {
@@ -442,10 +442,12 @@ body::-webkit-scrollbar {
   height: calc(100% - 80px);
   padding: 30px 0;
   display: none;
+  z-index: 400;
 }
 
 .burger.open {
   display: block;
+  background-color: #fff;
 }
 
 .burger__menu {

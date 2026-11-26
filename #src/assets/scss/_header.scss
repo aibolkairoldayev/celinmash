@@ -153,6 +153,7 @@
         width: fit-content;
     }
     &__item {
+        display: block;
         width: 305px;
         min-width: 305px;
         padding: 10px 15px;
@@ -164,7 +165,6 @@
         cursor: pointer;
         &.active {
             background: #F0F2FF;
-            cursor: default;
         }
     }
     &__right {
@@ -268,12 +268,14 @@
     height: calc(100% - 80px);
     padding: 30px 0;
     display: none;
+    z-index: 400;
     @media (max-width: 576px) {
         top: 60px;
         height: calc(100% - 60px);
     }
     &.open {
         display: block;
+        background-color: #fff;
     }
     &__menu {
         margin-bottom: 30px;
